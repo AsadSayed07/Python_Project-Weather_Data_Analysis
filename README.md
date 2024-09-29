@@ -19,7 +19,7 @@ Imported the 'Pandas' Library for analysing the dataset and completing the proje
 ## 15 PROBLEMS SOLVED BELOW USING PANDAS
 
 Q1. **Find all the unique "Wind Speed" Values in the data ?**
-```sql
+```vim
 print("No. of unique values in 'Wind Speed km/hr':", df["Wind Speed_km/h"].nunique())
 ```
 Q2. **Find the number of times when the "Weather" is "Exactly Clear"**
