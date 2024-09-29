@@ -1,5 +1,7 @@
 # Python Project - Weather Data Analysis
 
+<img src="" width="1000" height="300">
+
 ## OVERVIEW
 In this project, we will work on the "Weather Dataset", a time series data set with per-hour information about the weather conditions at a particular location. It covers an end-to-end process of understanding the dataset, uploading the file on **Jupyter Notebook** and using **Pandas** library for analysis .The primary goals of this project are to practice Pandas Library skills and generate valuable insights from the dataset.
 
@@ -116,6 +118,10 @@ s = df[((df["Weather Condition"] == "Clear") & (df["Rel Hum_%"] > 50)) | (df["Vi
 print("Below records show the records where Weather condition is clear and Relative Humidity is greater than 50 or where visibility is greater than 40:","\n")
 s
 ```
+
+## Technology Stack
+- **Database**: Jupyter Notebook
+- **Tools**: Jupyter Notebook, Python, Pandas
 
 
 
