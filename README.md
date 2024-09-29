@@ -1,6 +1,6 @@
 # Python Project - Weather Data Analysis
 
-<img src="" width="1000" height="300">
+<img src="https://github.com/AsadSayed07/Python_Project-Weather_Data_Analysis/blob/main/weather_image.jpg?raw=true" width="1000" height="300">
 
 ## OVERVIEW
 In this project, we will work on the "Weather Dataset", a time series data set with per-hour information about the weather conditions at a particular location. It covers an end-to-end process of understanding the dataset, uploading the file on **Jupyter Notebook** and using **Pandas** library for analysis .The primary goals of this project are to practice Pandas Library skills and generate valuable insights from the dataset.
@@ -72,7 +72,9 @@ print("Snow was recorded",len(df[df["Weather Condition"]=="Snow"]),"times")
 print("Snow was recorded", len(df.groupby("Weather Condition").get_group("Snow")), "times")
 
 #Method 4 Str.contains
-print("With 'str.contains' method, snow has been recorded",len(df[df["Weather Condition"].str.contains("Snow")]),"times, since it considers all the rows where snow is mentioned irrespective of other conditions along with it, for example: Freezing drizzle, Snow")
+print("With 'str.contains' method, snow has been recorded",len(df[df["Weather Condition"].str.contains("Snow")]),"times,
+since it considers all the rows where snow is mentioned irrespective of other conditions along with it, for example:
+Freezing drizzle, Snow")
 ```
 Q10. **Find all instances when "Wind Speed" is about 24 and "Visibility" is 25.**
 ```vim
@@ -109,13 +111,14 @@ a = df[(df["Weather Condition"] == "Clear") | (df["Visibility_km"] > 40)]
 print("The following records show all the instances where the weather was clear and visibility was 40:","\n")
 a
 ```
-Q15. **Find all instances when:**
-a) ***"Weather is Clear" and "Relative Humidity is greater than 50"***
-**OR**
+Q15. **Find all instances when:**<br>
+a) ***"Weather is Clear" and "Relative Humidity is greater than 50"*** <br>
+**OR** <br>
 b) ***"Visibility" is above 40"***
 ```vim
 s = df[((df["Weather Condition"] == "Clear") & (df["Rel Hum_%"] > 50)) | (df["Visibility_km"] > 40)]
-print("Below records show the records where Weather condition is clear and Relative Humidity is greater than 50 or where visibility is greater than 40:","\n")
+print("Below records show the records where Weather condition is clear and Relative Humidity is greater than 50
+ or where visibility is greater than 40:","\n")
 s
 ```
 
